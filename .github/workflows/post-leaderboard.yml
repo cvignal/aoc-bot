@@ -1,6 +1,13 @@
 name: Post leaderboard on Slack
 
 on:
+  workflow_dispatch:
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'Run the build with tmate debugging enabled'
+        required: false
+        default: false
   schedule:
     #  runs Monday to Saturday at 7 am UTC
     - cron: '0 18 * * *'
