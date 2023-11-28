@@ -14,7 +14,7 @@ on:
 
 env:
   LEADERBOARD_ID: ${{secrets.LEADERBOARD_ID}}
-  SLACK_WEBHOOK: ${{secrets.SLACK_WEBHOOK_URL}}
+  SLACK_WEBHOOK: ${{secrets.SLACK_WEBHOOK}}
   SESSION_ID: ${{secrets.SESSION_ID}}
 
 jobs:
@@ -36,6 +36,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: post leaderboard
-        run: |
-          env | grep {LEADERBOARD_ID,SLACK_WEBHOOK,SESSION_ID}
-          env python leaderboard.py
+        run: python leaderboard.py
