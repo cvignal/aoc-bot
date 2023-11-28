@@ -37,5 +37,5 @@ jobs:
 
       - name: post leaderboard
         run: |
-          env
+          env | grep {LEADERBOARD_ID,SLACK_WEBHOOK,SESSION_ID}
           env python leaderboard.py
