@@ -36,4 +36,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: post leaderboard
-        run: python leaderboard.py
+        run: env python leaderboard.py
