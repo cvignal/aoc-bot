@@ -132,11 +132,10 @@ def main():
     members = parseMembers(r.json()["members"])
 
     # generate message to send to slack
-    message = formatLeaderMessage(members[:5])
-    print(message)
+    message = formatLeaderMessage(members[:10])
 
     # send message to slack
-    # postMessage(message)
+    postMessage(message)
 
 
 if __name__ == "__main__":
