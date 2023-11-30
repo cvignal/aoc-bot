@@ -9,8 +9,7 @@ on:
         required: false
         default: false
   schedule:
-    #  runs Monday to Saturday at 7 am UTC
-    - cron: '0 18 * * *'
+    - cron: "0 10 * * *"
 
 env:
   LEADERBOARD_ID: ${{secrets.LEADERBOARD_ID}}
