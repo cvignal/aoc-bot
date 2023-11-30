@@ -9,7 +9,7 @@ on:
         required: false
         default: false
   schedule:
-    - cron: "0 10 * * *"
+    - cron: "45 9 * * *"
 
 env:
   LEADERBOARD_ID: ${{secrets.LEADERBOARD_ID}}
