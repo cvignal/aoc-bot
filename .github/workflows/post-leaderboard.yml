@@ -8,8 +8,8 @@ on:
         description: 'Run the build with tmate debugging enabled'
         required: false
         default: false
-  # schedule:
-  #   - cron: "45 17 * * *"
+  schedule:
+    - cron: "45 17 * * *"
 
 env:
   LEADERBOARD_ID: ${{secrets.LEADERBOARD_ID}}
